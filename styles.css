@@ -1,0 +1,92 @@
+/* Reset de margens e preenchimentos e define o box-sizing */
+* {
+    box-sizing: border-box; /* Inclui padding e bordas na largura total do elemento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background: #007BFF; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    padding: 1rem; /* Preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a lista de navegação */
+nav ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento */
+}
+
+/* Estiliza os itens da lista de navegação */
+nav ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 15px; /* Margem lateral entre os itens */
+}
+
+/* Estiliza os links da navegação */
+nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estiliza o conteúdo principal */
+main {
+    display: flex; /* Ativa o Flexbox */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Estiliza a seção principal */
+section {
+    flex: 1; /* Permite que a seção ocupe o espaço restante */
+    min-width: 300px; /* Largura mínima para a seção */
+    margin: 10px; /* Margem entre os elementos */
+    background: #f4f4f4; /* Cor de fundo cinza claro */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estiliza a barra lateral */
+aside {
+    flex: 0 0 200px; /* Largura fixa de 200px */
+    margin: 10px; /* Margem entre os elementos */
+    background: #e2e2e2; /* Cor de fundo cinza claro */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estiliza o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Preenchimento interno */
+    background: #333; /* Cor de fundo cinza escuro */
+    color: white; /* Texto branco */
+    position: relative; /* Posicionamento relativo para o rodapé */
+    bottom: 0; /* Alinha na parte inferior */
+    width: 100%; /* Largura total do rodapé */
+}
+
+/* Media Query para responsividade */
+@media (max-width: 600px) {
+    /* Estilo para telas menores que 600px */
+    nav ul li {
+        display: block; /* Muda os itens da lista para o modo bloco */
+        margin: 10px 0; /* Margem vertical entre os itens */
+    }
+
+    main {
+        flex-direction: column; /* Alinha os itens do main verticalmente */
+    }
+
+    aside {
+        flex: 1; /* Permite que a barra lateral ocupe o espaço restante */
+    }
+}
